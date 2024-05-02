@@ -3,8 +3,8 @@
 	"version": "8.0.0",
 	"description": "From rice fields to corn fields, a blog by a real Hoosier.",
 	"scripts": {
-		"build": "env NODE_ENV=production npx eleventy --pathprefix 'blog'",
-		"build-ghpages": "npx @11ty/eleventy --pathprefix=",
+		"build": "env NODE_ENV=production npx eleventy --pathprefix 'jinjjahoosier'",
+		"build-ghpages": "npx @11ty/eleventy --pathprefix=/jinjjahoosier/",
 		"start": "npx @11ty/eleventy --serve --quiet",
 		"debug": "DEBUG=Eleventy* npx @11ty/eleventy",
 		"debugstart": "DEBUG=Eleventy* npx @11ty/eleventy --serve --quiet",
