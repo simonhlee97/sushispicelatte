@@ -1,10 +1,10 @@
 {
-	"name": "eleventy-base-blog",
+	"name": "blogsss",
 	"version": "8.0.0",
 	"description": "A starter repository for a blog web site using the Eleventy site generator.",
 	"scripts": {
 		"build": "env NODE_ENV=production npx eleventy --pathprefix 'blog'",
-		"build-ghpages": "npx @11ty/eleventy --pathprefix=/eleventy-base-blog/",
+		"build-ghpages": "npx @11ty/eleventy --pathprefix=/blog/",
 		"start": "npx @11ty/eleventy --serve --quiet",
 		"debug": "DEBUG=Eleventy* npx @11ty/eleventy",
 		"debugstart": "DEBUG=Eleventy* npx @11ty/eleventy --serve --quiet",
