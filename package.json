@@ -1,7 +1,7 @@
 {
-	"name": "blogsss",
+	"name": "jinjjahoosier",
 	"version": "8.0.0",
-	"description": "A starter repository for a blog web site using the Eleventy site generator.",
+	"description": "From rice fields to corn fields, a blog by a real Hoosier.",
 	"scripts": {
 		"build": "env NODE_ENV=production npx eleventy --pathprefix 'blog'",
 		"build-ghpages": "npx @11ty/eleventy --pathprefix=",
@@ -15,9 +15,9 @@
 		"url": "git://github.com/11ty/eleventy-base-blog.git"
 	},
 	"author": {
-		"name": "Zach Leatherman",
-		"email": "zachleatherman@gmail.com",
-		"url": "https://zachleat.com/"
+		"name": "Simon Lee",
+		"email": "psyminrhee79@icloud.com",
+		"url": "https://simonhlee97.github.io/"
 	},
 	"license": "MIT",
 	"engines": {
