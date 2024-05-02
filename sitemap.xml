@@ -42,11 +42,6 @@
 	</url>
 	
 	<url>
-		<loc>https://simonhlee97.github.io/blog/tags/another-tag/</loc>
-		<lastmod>2024-05-02</lastmod>
-	</url>
-	
-	<url>
 		<loc>https://simonhlee97.github.io/blog/tags/number-2/</loc>
 		<lastmod>2024-05-02</lastmod>
 	</url>
@@ -58,6 +53,11 @@
 	
 	<url>
 		<loc>https://simonhlee97.github.io/blog/tags/posts-with-two-tags/</loc>
+		<lastmod>2024-05-02</lastmod>
+	</url>
+	
+	<url>
+		<loc>https://simonhlee97.github.io/blog/tags/another-tag/</loc>
 		<lastmod>2024-05-02</lastmod>
 	</url>
 </urlset>
