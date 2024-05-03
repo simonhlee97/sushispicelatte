@@ -1,0 +1,22 @@
+.post-title {
+  font-family: var(--header-font);
+  font-weight: 900;
+  text-align: center;
+  padding: 12px 4px;
+  font-size: min(max(32px, calc(2rem + ((1vw - 3.6px) * 3.6364))), 48px);
+  /* Safari resize fix */
+  min-height: 0vw;
+  margin-bottom: 0;
+}
+.date {
+  padding-bottom: 1.4em;
+}
+.date time {
+  font-size: 9.5pt;
+}
+.links-nextprev {
+	list-style: none;
+	border-top: 1px dashed var(--color-gray-20);
+	padding: 1em 0;
+}
+
