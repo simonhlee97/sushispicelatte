@@ -1,14 +1,18 @@
 /* Message Box */
 .message-box {
-	--color-message-box: #ffc;
-
 	display: block;
-	background-color: var(--color-message-box);
+  background: linear-gradient(to right, var(--blue2), var(--blue1));
+	/* background-color: var(--green); */
 	color: var(--color-gray-90);
-	padding: 1em 0.625em; /* 16px 10px /16 */
+	padding: 0.4em;
+  border-radius: 6px;
+  max-width: 560px;
+  margin-bottom: 2em;
+  margin-left:auto;
+  margin-right:auto;
 }
-.message-box ol {
-	margin-top: 0;
+.message-box > * {
+  margin-bottom: 0;
 }
 
 @media (prefers-color-scheme: dark) {

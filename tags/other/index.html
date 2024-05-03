@@ -3,8 +3,8 @@
 	<head>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<title>Welcome to Jinjja Hoosier</title>
-		<meta name="description" content="Welcome to the Jinjja Hoosier blog! A blog about nothing.">
+		<title>Tagged &quot;other&quot;</title>
+		<meta name="description" content="Jinjja, in Korean, means real. Hoosier is just a person from Indiana.">
 		<link rel="alternate" href="/jinjjahoosier/feed/feed.xml" type="application/atom+xml" title="Jinjja Hoosier">
 		<link rel="alternate" href="/jinjjahoosier/feed/feed.json" type="application/json" title="Jinjja Hoosier">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer">
@@ -12,197 +12,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap" rel="stylesheet">
-		<style>/**
- * okaidia theme for JavaScript, CSS and HTML
- * Loosely based on Monokai textmate theme by http://www.monokai.nl/
- * @author ocodia
- */
-
-code[class*="language-"],
-pre[class*="language-"] {
-	color: #f8f8f2;
-	background: none;
-	text-shadow: 0 1px rgba(0, 0, 0, 0.3);
-	font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
-	font-size: 1em;
-	text-align: left;
-	white-space: pre;
-	word-spacing: normal;
-	word-break: normal;
-	word-wrap: normal;
-	line-height: 1.5;
-
-	-moz-tab-size: 4;
-	-o-tab-size: 4;
-	tab-size: 4;
-
-	-webkit-hyphens: none;
-	-moz-hyphens: none;
-	-ms-hyphens: none;
-	hyphens: none;
-}
-
-/* Code blocks */
-pre[class*="language-"] {
-	padding: 1em;
-	margin: .5em 0;
-	overflow: auto;
-	border-radius: 0.3em;
-}
-
-:not(pre) > code[class*="language-"],
-pre[class*="language-"] {
-	background: #272822;
-}
-
-/* Inline code */
-:not(pre) > code[class*="language-"] {
-	padding: .1em;
-	border-radius: .3em;
-	white-space: normal;
-}
-
-.token.comment,
-.token.prolog,
-.token.doctype,
-.token.cdata {
-	color: #8292a2;
-}
-
-.token.punctuation {
-	color: #f8f8f2;
-}
-
-.token.namespace {
-	opacity: .7;
-}
-
-.token.property,
-.token.tag,
-.token.constant,
-.token.symbol,
-.token.deleted {
-	color: #f92672;
-}
-
-.token.boolean,
-.token.number {
-	color: #ae81ff;
-}
-
-.token.selector,
-.token.attr-name,
-.token.string,
-.token.char,
-.token.builtin,
-.token.inserted {
-	color: #a6e22e;
-}
-
-.token.operator,
-.token.entity,
-.token.url,
-.language-css .token.string,
-.style .token.string,
-.token.variable {
-	color: #f8f8f2;
-}
-
-.token.atrule,
-.token.attr-value,
-.token.function,
-.token.class-name {
-	color: #e6db74;
-}
-
-.token.keyword {
-	color: #66d9ef;
-}
-
-.token.regex,
-.token.important {
-	color: #fd971f;
-}
-
-.token.important,
-.token.bold {
-	font-weight: bold;
-}
-.token.italic {
-	font-style: italic;
-}
-
-.token.entity {
-	cursor: help;
-}
-
-/*
- * New diff- syntax
- */
-
-pre[class*="language-diff-"] {
-	--eleventy-code-padding: 1.25em;
-	padding-left: var(--eleventy-code-padding);
-	padding-right: var(--eleventy-code-padding);
-}
-.token.deleted {
-	background-color: hsl(0, 51%, 37%);
-	color: inherit;
-}
-.token.inserted {
-	background-color: hsl(126, 31%, 39%);
-	color: inherit;
-}
-
-/* Make the + and - characters unselectable for copy/paste */
-.token.prefix.unchanged,
-.token.prefix.inserted,
-.token.prefix.deleted {
-	-webkit-user-select: none;
-	user-select: none;
-	display: inline-flex;
-	align-items: center;
-	justify-content: center;
-	padding-top: 2px;
-	padding-bottom: 2px;
-}
-.token.prefix.inserted,
-.token.prefix.deleted {
-	width: var(--eleventy-code-padding);
-	background-color: rgba(0,0,0,.2);
-}
-
-/* Optional: full-width background color */
-.token.inserted:not(.prefix),
-.token.deleted:not(.prefix) {
-	display: block;
-	margin-left: calc(-1 * var(--eleventy-code-padding));
-	margin-right: calc(-1 * var(--eleventy-code-padding));
-	text-decoration: none; /* override del, ins, mark defaults */
-	color: inherit; /* override del, ins, mark defaults */
-}
-
-.post-title {
-  font-family: var(--header-font);
-  font-weight: 900;
-  text-align: center;
-  padding: 12px 4px;
-  font-size: min(max(32px, calc(2rem + ((1vw - 3.6px) * 3.6364))), 48px);
-  /* Safari resize fix */
-  min-height: 0vw;
-  margin-bottom: 0;
-}
-.date {
-  padding-bottom: 1.4em;
-}
-.date time {
-  font-size: 9.5pt;
-}
-.links-nextprev {
-	list-style: none;
-	border-top: 1px dashed var(--color-gray-20);
-	padding: 1em 0;
-}
+		<style>.postlist { counter-reset: start-from 2 }
 /* CSS reset from Josh Comeau */
 *, *::before, *::after {
   box-sizing: border-box;
@@ -606,21 +416,26 @@ header:after {
 		</header>
 
 		<main id="skip">
-			
+			<div class="pt-1">
+  <h1 class="message-box tc">Tagged "other"</h1>
 
-<h1 class="post-title">Welcome to Jinjja Hoosier</h1>
+  
+  
+<ul reversed="" class="postlist">
 
-<div class="date tc">
-  <time datetime="2024-05-02">02 May 2024</time>
+	<li class="postlist-item">
+		<a href="/jinjjahoosier/blog/firstpost/" class="postlist-link">Welcome to Jinjja Hoosier</a>
+		<time class="postlist-date" datetime="2024-05-02">May 2024</time>
+	</li>
+
+</ul>
+
+
+  <div class="see-all-tags">
+    <p class="tc">See <a href="/jinjjahoosier/tags/">all tags</a></p>
+  </div>
 </div>
 
-<p>Welcome to Jinjja Hoosier, &quot;a blog about nothing&quot;. More accurately, a blog not focused on one topic. I'm leaving this blog wide open. We'll see what happens.</p>
-
-
-<div class="tags post-metadata">
-  <h4>tags:</h4>
-	  <li><a href="/jinjjahoosier/tags/other/" class="post-tag">other</a></li>
-</div>
 
 		</main>
 
