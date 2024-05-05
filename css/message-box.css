@@ -1,12 +1,19 @@
-/* Message Box */
+.box-red {
+  background: linear-gradient(to right, salmon, tomato);
+}
+.box-green {
+  background: linear-gradient(to right, var(--green), #4ee04e);
+}
+.box-blue {
+  background: linear-gradient(to right, var(--blue2), var(--blue1));
+}
+
 .message-box {
 	display: block;
-  background: linear-gradient(to right, var(--blue2), var(--blue1));
-	/* background-color: var(--green); */
 	color: var(--color-gray-90);
-	padding: 0.4em;
-  border-radius: 6px;
-  max-width: 560px;
+	padding: 0.3em;
+  border-radius: 8px;
+  max-width: 550px;
   margin-bottom: 2em;
   margin-left:auto;
   margin-right:auto;

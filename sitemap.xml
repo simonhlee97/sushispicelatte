@@ -2,47 +2,82 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
 	
 	<url>
-		<loc>https://simonhlee97.github.io/jinjjahoosier/blog/firstpost/</loc>
-		<lastmod>2024-05-02</lastmod>
-	</url>
-	
-	<url>
 		<loc>https://simonhlee97.github.io/jinjjahoosier/about/</loc>
-		<lastmod>2024-05-03</lastmod>
+		<lastmod>2024-05-05</lastmod>
 	</url>
 	
 	<url>
 		<loc>https://simonhlee97.github.io/jinjjahoosier/blog/</loc>
-		<lastmod>2024-05-03</lastmod>
+		<lastmod>2024-05-05</lastmod>
+	</url>
+	
+	<url>
+		<loc>https://simonhlee97.github.io/jinjjahoosier/blog/firstpost/</loc>
+		<lastmod>2024-05-05</lastmod>
+	</url>
+	
+	<url>
+		<loc>https://simonhlee97.github.io/jinjjahoosier/blogroll/</loc>
+		<lastmod>2024-05-05</lastmod>
+	</url>
+	
+	<url>
+		<loc>https://simonhlee97.github.io/jinjjahoosier/changelog/</loc>
+		<lastmod>2024-05-05</lastmod>
 	</url>
 	
 	<url>
 		<loc>https://simonhlee97.github.io/jinjjahoosier/</loc>
-		<lastmod>2024-05-03</lastmod>
+		<lastmod>2024-05-05</lastmod>
+	</url>
+	
+	<url>
+		<loc>https://simonhlee97.github.io/jinjjahoosier/now/</loc>
+		<lastmod>2024-05-05</lastmod>
 	</url>
 	
 	<url>
 		<loc>https://simonhlee97.github.io/jinjjahoosier/tags/</loc>
-		<lastmod>2024-05-03</lastmod>
-	</url>
-	
-	<url>
-		<loc>https://simonhlee97.github.io/jinjjahoosier/tags/other/</loc>
-		<lastmod>2024-05-03</lastmod>
+		<lastmod>2024-05-05</lastmod>
 	</url>
 	
 	<url>
 		<loc>https://simonhlee97.github.io/jinjjahoosier/tags/tag2/</loc>
-		<lastmod>2024-05-03</lastmod>
+		<lastmod>2024-05-05</lastmod>
 	</url>
 	
 	<url>
 		<loc>https://simonhlee97.github.io/jinjjahoosier/tags/second-tag/</loc>
-		<lastmod>2024-05-03</lastmod>
+		<lastmod>2024-05-05</lastmod>
 	</url>
 	
 	<url>
 		<loc>https://simonhlee97.github.io/jinjjahoosier/tags/posts-with-two-tags/</loc>
-		<lastmod>2024-05-03</lastmod>
+		<lastmod>2024-05-05</lastmod>
+	</url>
+	
+	<url>
+		<loc>https://simonhlee97.github.io/jinjjahoosier/tags/pots-with-two-tags/</loc>
+		<lastmod>2024-05-05</lastmod>
+	</url>
+	
+	<url>
+		<loc>https://simonhlee97.github.io/jinjjahoosier/tags/posts-wh-two-tags/</loc>
+		<lastmod>2024-05-05</lastmod>
+	</url>
+	
+	<url>
+		<loc>https://simonhlee97.github.io/jinjjahoosier/tags/posts-with-tags/</loc>
+		<lastmod>2024-05-05</lastmod>
+	</url>
+	
+	<url>
+		<loc>https://simonhlee97.github.io/jinjjahoosier/tags/posts-witags/</loc>
+		<lastmod>2024-05-05</lastmod>
+	</url>
+	
+	<url>
+		<loc>https://simonhlee97.github.io/jinjjahoosier/tags/other/</loc>
+		<lastmod>2024-05-05</lastmod>
 	</url>
 </urlset>

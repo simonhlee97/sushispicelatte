@@ -12,8 +12,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap" rel="stylesheet">
-		<style>.postlist { counter-reset: start-from 1 }
-/* CSS reset from Josh Comeau */
+		<style>/* CSS reset from Josh Comeau */
 *, *::before, *::after {
   box-sizing: border-box;
 }
@@ -52,14 +51,14 @@ p, h1, h2, h3, h4, h5, h6 {
 	--color-gray-20: #e0e0e0;
 	--color-gray-50: #C0C0C0;
 	--color-gray-90: #333;
-  --blue1: #68E8F4;
-  --blue2: #7799F6;
-  --green: #68F97A;
+  --blue1: #1C59FF;
+  --blue2: #581CFF;
+  --green: #005D66;
 	--background-color: #fff;
 	--text-color: var(--color-gray-90);
-	--text-color-link: #082840;
-	--text-color-link-active: #5f2b48;
-	--text-color-link-visited: #17050F;
+	--text-color-link: #083251;
+	--text-color-link-active: #204a9a;
+	--text-color-link-visited: #005D66;
 	--syntax-tab-size: 2;
 }
 @media (prefers-color-scheme: dark) {
@@ -98,7 +97,7 @@ html {
 	overflow-y: scroll;
 	overflow-x: hidden;
 
-  scrollbar-color: var(--blue1) var(--green);
+  scrollbar-color: var(--blue1) white;
   scroll-behavior: smooth;
   /* background-color: #282626; */
   background: linear-gradient(to bottom right, var(--color-gray-20), var(--color-gray-90));
@@ -139,17 +138,8 @@ li {
 }
 
 main {
-	padding: 1rem;
+	padding: 2rem 1.6rem 1.1rem 1.6rem;
   min-height: 100vh;
-}
-main :first-child {
-	margin-top: 0;
-}
-
-.links-nextprev {
-	list-style: none;
-	border-top: 1px dashed var(--color-gray-20);
-	padding: 1em 0;
 }
 
 table {
@@ -282,9 +272,10 @@ header:after {
 	list-style: none;
 }
 .nav-item {
-	padding: 5px;
-	margin: 5px;
+	padding: 4px;
+	margin: 4px;
   text-transform: uppercase;
+  font-size: 0.9em;
 }
 .nav-item a[href]:not(:hover) {
 	text-decoration: none;
@@ -308,6 +299,9 @@ header:after {
   margin: 1em auto;
   text-align: center;
 }
+p.footer-p {
+  margin-bottom: 5px;
+}
     /* Tags */
 .post-tag {
 	display: inline-flex;
@@ -328,64 +322,65 @@ header:after {
 .post-metadata {
 	display: inline-flex;
 	flex-wrap: wrap;
-	gap: .5em;
+	gap: .44em;
 	list-style: none;
-	padding: 0;
-	margin: 3em 0 3em 0;
+	padding: 2.5em 0;
 }
 
-    
-/* Posts list */
+    .excerpt {
+  font-style: italic;
+  font-size: 10.7pt;
+  padding: 6px 0 5px 0;
+}
 .postlist {
 	list-style: none;
-	padding: 0;
-	padding-left: 1.5rem;
+	padding: 1em;
 }
 .postlist-item {
-	display: flex;
-	flex-wrap: wrap;
-	align-items: baseline;
-	counter-increment: start-from -1;
-	margin-bottom: 1em;
+  padding: 16px 12px;
+	margin-bottom: 1.825em;
+  box-shadow: 0px 0px 0px 1px var(--blue1);
+  transition: box-shadow 0.3s linear;
 }
-.postlist-item:before {
-	display: inline-block;
-	pointer-events: none;
-	content: "" counter(start-from, decimal-leading-zero) ". ";
-	line-height: 100%;
-	text-align: right;
-	margin-left: -1.5rem;
+.postlist-item:hover {
+  box-shadow: 0px 0px 0px 3px var(--blue2);
 }
 .postlist-date,
 .postlist-item:before {
-	font-size: 0.8125em; /* 13px /16 */
+	font-size: 0.85em;
 	color: var(--color-gray-90);
 }
 .postlist-date {
 	word-spacing: -0.5px;
 }
 .postlist-link {
-	font-size: 1.1875em; /* 19px /16 */
+	font-size: 1.1875em;
 	font-weight: 700;
 	flex-basis: calc(100% - 1.5rem);
-	padding-left: .25em;
-	padding-right: .5em;
 	text-underline-position: from-font;
 	text-underline-offset: 0;
 	text-decoration-thickness: 1px;
+  
 }
 .postlist-item-active .postlist-link {
 	font-weight: bold;
 }
-    /* Message Box */
+    .box-red {
+  background: linear-gradient(to right, salmon, tomato);
+}
+.box-green {
+  background: linear-gradient(to right, var(--green), #4ee04e);
+}
+.box-blue {
+  background: linear-gradient(to right, var(--blue2), var(--blue1));
+}
+
 .message-box {
 	display: block;
-  background: linear-gradient(to right, var(--blue2), var(--blue1));
-	/* background-color: var(--green); */
 	color: var(--color-gray-90);
-	padding: 0.4em;
-  border-radius: 6px;
-  max-width: 560px;
+	padding: 0.3em;
+  border-radius: 8px;
+  max-width: 550px;
   margin-bottom: 2em;
   margin-left:auto;
   margin-right:auto;
@@ -398,32 +393,153 @@ header:after {
 	.message-box {
 		--color-message-box: #082840;
 	}
-}</style>
+}
+
+    .badge {
+  padding-top: 0.2em;
+  padding-bottom: 0.2em;
+  border-radius: 9999px; 
+  max-width: 484px;
+  margin: 21px auto 28px auto;
+  color: var(--blue1); 
+  background-color: #EDE9FE;
+}
+a.btn-tag {
+  border: 1px solid var(--blue1);
+  border-radius: 0.25rem; 
+  font-size: 9.1pt;
+  text-decoration: none;
+  padding: 4px 12px;
+}
+a.btn-tag:hover {
+  text-decoration: underline;
+  border: 1px solid var(--blue2);
+}
+
+
+
+
+
+
+
+
+
+
+
+/* fancy border */
+.fancy-border {
+  position: relative;
+  display: inline-block;
+  padding: 5em 4em;
+  cursor: pointer;
+  overflow: hidden;
+}
+/* top, bottom border */
+.fancy-border:before, .fancy-border:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  height: 1px;
+  width: 100%;
+  background-color: purple; 
+}
+.fancy-border:before {
+  top: 0;
+}
+.fancy-border:after {
+  bottom: 0;
+}
+.fancy-border:hover > * > *:before, .fancy-border:hover > * > *:after {
+  transform: translate3d(0, 0, 0);
+}
+.fancy-border:hover > * > * > *:before, .fancy-border:hover > * > * > *:after {
+  transform: translate3d(0, 0, 0);
+}
+.fancy-border > *:before, .fancy-border > *:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  height: 100%;
+  width: 1px;
+  background-color: var(--green);
+}
+.fancy-border > *:before {
+  left: 0;
+}
+.fancy-border > *:after {
+  right: 0;
+}
+.fancy-border > * > *:before, .fancy-border > * > *:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  z-index: 1;
+  height: 1px;
+  /* width: 100%; */
+  background-color: var(--blue1);
+}
+.fancy-border > * > *:before {
+  top: 0;
+  transform: translate3d(-105%, 0, 0);
+  transition: transform 0.8s cubic-bezier(0.4, 0, 0.2, 1);
+}
+.fancy-border > * > *:after {
+  bottom: 0;
+  transform: translate3d(105%, 0, 0);
+  transition: transform 0.8s cubic-bezier(0.4, 0, 0.2, 1);
+}
+.fancy-border > * > * > *:before, .fancy-border > * > * > *:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  z-index: 9;
+  height: 100%;
+  width: 1px;
+  background-color: var(--blue1);
+  /* left and right borders */
+}
+.fancy-border > * > * > *:before {
+  left: 0;
+  transform: translate3d(0, 105%, 0);
+  transition: transform 0.8s cubic-bezier(0.4, 0, 0.2, 1);
+}
+.fancy-border > * > * > *:after {
+  right: 0;
+  transform: translate3d(0, -105%, 0);
+  transition: transform 0.8s cubic-bezier(0.4, 0, 0.2, 1);
+}
+/* fancy border */</style>
 	</head>
 	<body>
 		<a href="#skip" class="visually-hidden">Skip to main content</a>
 
 		<header>
-			<a href="/jinjjahoosier/"><img style="max-width:199px;" src="/jinjjahoosier/img/jinjja_log1.jpg" alt="jinjjalogo"></a>
+			<a href="/jinjjahoosier/"><img style="width:206px;" src="/jinjjahoosier/img/jinjja_log1.jpg" alt="jinjjalogo"></a>
 			<nav>
 				<h2 class="visually-hidden">Top level navigation menu</h2>
 				<ul class="nav">
 					<li class="nav-item"><a href="/jinjjahoosier/">Home</a></li>
 					<li class="nav-item"><a href="/jinjjahoosier/blog/">Archive</a></li>
-					<li class="nav-item"><a href="/jinjjahoosier/about/">About</a></li>
+					<li class="nav-item"><a href="/jinjjahoosier/about/">about</a></li>
+					<li class="nav-item"><a href="/jinjjahoosier/now/">now</a></li>
+					<li class="nav-item"><a href="/jinjjahoosier/blogroll/">blogroll</a></li>
 				</ul>
 			</nav>
 		</header>
 
 		<main id="skip">
 			<div class="pt-1">
-  <h1 class="message-box tc">Tagged "tag2"</h1>
+  <h1 class="badge tc">Tagged "tag2"</h1>
 
   
+  <div class="postlist">
   
-<ul reversed="" class="postlist">
+</div>
 
-</ul>
+
+
+
+
 
 
   <div class="see-all-tags">
@@ -443,16 +559,15 @@ header:after {
 
       <div>
         <ul class="icons">
-          <li><a href="#!"><i class="fa-2x fa-brands fa-square-github"></i></a></li>
-          <li><a href="#!"><i class="fa-2x fa-solid fa-square-rss"></i></a></li>
-          <li><a href="#!"><i class="fa-2x fa-brands fa-spotify"></i></a></li>
+          <li><a href="https://github.com/simonhlee97"><i class="fa-2x fa-brands fa-square-github"></i></a></li>
+          <li><a href="https://open.spotify.com/user/r0nqj37i54ondk4yntbug4beh"><i class="fa-2x fa-brands fa-spotify"></i></a></li>
           <li><a href="#!"><i class="fa-2x fa-brands fa-square-youtube"></i></a></li>
         </ul>
       </div>
       <div class="footer-info">
-        <p>Site built with <a href="https://www.11ty.dev/" target="_blank">11ty</a></p>
-        <p>Hosted on <a href="https://pages.github.com/" target="_blank">Github Pages</a></p>
-        <p>&copy; Copyright 2024</p>
+        <p class="footer-p">Site built with <a href="https://www.11ty.dev/" target="_blank">11ty</a></p>
+        <p class="footer-p">Hosted on <a href="https://pages.github.com/" target="_blank">Github Pages</a></p>
+        <p class="footer-p">&copy; 2024</p>
       </div>
     </footer>
 	</body>

@@ -18,8 +18,7 @@
 .post-metadata {
 	display: inline-flex;
 	flex-wrap: wrap;
-	gap: .5em;
+	gap: .44em;
 	list-style: none;
-	padding: 0;
-	margin: 3em 0 3em 0;
+	padding: 2.5em 0;
 }
