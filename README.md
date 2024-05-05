@@ -19,4 +19,25 @@ A blog by Simon Lee
 - finance
 - other
 
-As long as it's not tennis or photography, this blog can be a place for it.
+tennis and photography are at my other blogs
+
+TODO:
+- change tag-links to outlined button-design
+- All Tags page - change list to outlined buttons
+
+
+## List of [ideas](https://jamesg.blog/2024/02/19/personal-website-ideas/)
+
+- [weather widget](https://weatherwidget.io/)
+- sports widget
+- calendar widget
+- blogroll (#11)
+- guestbook (#20) via [webmention](https://indieweb.org/Webmention)
+- Now page
+- Search
+- join webring
+
+## Cool Blogs
+
+- [Ana](https://ohhelloana.blog/about/)
+- [httpster](https://httpster.io/about/)

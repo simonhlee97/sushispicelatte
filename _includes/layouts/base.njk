@@ -19,6 +19,7 @@
     {% include "public/css/tags.css" %}
     {% include "public/css/postlist.css" %}
     {% include "public/css/message-box.css" %}
+    {% include "public/css/components.css" %}
     {% endcss %}
 		<style>{% getBundle "css" %}</style>
 	</head>
@@ -26,7 +27,7 @@
 		<a href="#skip" class="visually-hidden">Skip to main content</a>
 
 		<header>
-			<a href="/"><img style="max-width:199px;" src="/img/jinjja_log1.jpg" alt="jinjjalogo" /></a>
+			<a href="/"><img style="width:206px;" src="/img/jinjja_log1.jpg" alt="jinjjalogo" /></a>
 			<nav>
 				<h2 class="visually-hidden">Top level navigation menu</h2>
 				<ul class="nav">
@@ -50,16 +51,15 @@
 
       <div>
         <ul class="icons">
-          <li><a href="#!"><i class="fa-2x fa-brands fa-square-github"></i></a></li>
-          <li><a href="#!"><i class="fa-2x fa-solid fa-square-rss"></i></a></li>
-          <li><a href="#!"><i class="fa-2x fa-brands fa-spotify"></i></a></li>
+          <li><a href="https://github.com/simonhlee97"><i class="fa-2x fa-brands fa-square-github"></i></a></li>
+          <li><a href="https://open.spotify.com/user/r0nqj37i54ondk4yntbug4beh"><i class="fa-2x fa-brands fa-spotify"></i></a></li>
           <li><a href="#!"><i class="fa-2x fa-brands fa-square-youtube"></i></a></li>
         </ul>
       </div>
       <div class="footer-info">
-        <p>Site built with <a href="https://www.11ty.dev/" target="_blank">11ty</a></p>
-        <p>Hosted on <a href="https://pages.github.com/" target="_blank">Github Pages</a></p>
-        <p>&copy; Copyright 2024</p>
+        <p class="footer-p">Site built with <a href="https://www.11ty.dev/" target="_blank">11ty</a></p>
+        <p class="footer-p">Hosted on <a href="https://pages.github.com/" target="_blank">Github Pages</a></p>
+        <p class="footer-p">&copy; 2024</p>
       </div>
     </footer>
 	</body>

@@ -6,7 +6,6 @@ layout: layouts/base.njk
 {% include "node_modules/prismjs/themes/prism-okaidia.css" %}
 {% include "public/css/prism-diff.css" %}
 {% include "public/css/post.css" %}
-
 {%- endcss %}
 
 <h1 class="post-title">{{ title }}</h1>
@@ -18,10 +17,9 @@ layout: layouts/base.njk
 {{ content | safe }}
 
 <div class="tags post-metadata">
-  <h4>tags:</h4>
   {%- for tag in tags | filterTagList %}
 	  {%- set tagUrl %}/tags/{{ tag | slugify }}/{% endset %}
-	  <li><a href="{{ tagUrl }}" class="post-tag">{{ tag }}</a>{%- if not loop.last %}, {% endif %}</li>
+	  <a href="{{ tagUrl }}" class='btn-tag'>{{ tag }}</a>
 	{%- endfor %}
 </div>
 

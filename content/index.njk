@@ -7,9 +7,7 @@ numberOfLatestPostsToShow: 3
 ---
 {% set postsCount = collections.posts | length %}
 {% set latestPostsCount = postsCount | min(numberOfLatestPostsToShow) %}
-<div class="message-box">
-  <h1 class='tc'>Latest {{ latestPostsCount }} Post{% if latestPostsCount != 1 %}s{% endif %}</h1>
-</div>
+<h1 class='tc badge'>Latest {{ latestPostsCount }} Post{% if latestPostsCount != 1 %}s{% endif %}</h1>
 
 {% set postslist = collections.posts | head(-1 * numberOfLatestPostsToShow) %}
 {% set postslistCounter = postsCount %}
@@ -17,7 +15,7 @@ numberOfLatestPostsToShow: 3
 
 {% set morePosts = postsCount - numberOfLatestPostsToShow %}
 {% if morePosts > 0 %}
-<p>{{ morePosts }} more post{% if morePosts != 1 %}s{% endif %} can be found in <a href="/blog/">the archive</a>.</p>
+<h5 class="tc">{{ morePosts }} more post{% if morePosts != 1 %}s{% endif %} can be found in <a href="/blog/">the archive</a>.</h5>
 {% endif %}
 
 {# List every content page in the project #}

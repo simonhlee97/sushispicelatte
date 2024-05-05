@@ -1,0 +1,114 @@
+.badge {
+  padding-top: 0.2em;
+  padding-bottom: 0.2em;
+  border-radius: 9999px; 
+  max-width: 484px;
+  margin: 21px auto 28px auto;
+  color: var(--blue1); 
+  background-color: #EDE9FE;
+}
+a.btn-tag {
+  border: 1px solid var(--blue1);
+  border-radius: 0.25rem; 
+  font-size: 9.1pt;
+  text-decoration: none;
+  padding: 4px 12px;
+}
+a.btn-tag:hover {
+  text-decoration: underline;
+  border: 1px solid var(--blue2);
+}
+
+
+
+
+
+
+
+
+
+
+
+/* fancy border */
+.fancy-border {
+  position: relative;
+  display: inline-block;
+  padding: 5em 4em;
+  cursor: pointer;
+  overflow: hidden;
+}
+/* top, bottom border */
+.fancy-border:before, .fancy-border:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  height: 1px;
+  width: 100%;
+  background-color: purple; 
+}
+.fancy-border:before {
+  top: 0;
+}
+.fancy-border:after {
+  bottom: 0;
+}
+.fancy-border:hover > * > *:before, .fancy-border:hover > * > *:after {
+  transform: translate3d(0, 0, 0);
+}
+.fancy-border:hover > * > * > *:before, .fancy-border:hover > * > * > *:after {
+  transform: translate3d(0, 0, 0);
+}
+.fancy-border > *:before, .fancy-border > *:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  height: 100%;
+  width: 1px;
+  background-color: var(--green);
+}
+.fancy-border > *:before {
+  left: 0;
+}
+.fancy-border > *:after {
+  right: 0;
+}
+.fancy-border > * > *:before, .fancy-border > * > *:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  z-index: 1;
+  height: 1px;
+  /* width: 100%; */
+  background-color: var(--blue1);
+}
+.fancy-border > * > *:before {
+  top: 0;
+  transform: translate3d(-105%, 0, 0);
+  transition: transform 0.8s cubic-bezier(0.4, 0, 0.2, 1);
+}
+.fancy-border > * > *:after {
+  bottom: 0;
+  transform: translate3d(105%, 0, 0);
+  transition: transform 0.8s cubic-bezier(0.4, 0, 0.2, 1);
+}
+.fancy-border > * > * > *:before, .fancy-border > * > * > *:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  z-index: 9;
+  height: 100%;
+  width: 1px;
+  background-color: var(--blue1);
+  /* left and right borders */
+}
+.fancy-border > * > * > *:before {
+  left: 0;
+  transform: translate3d(0, 105%, 0);
+  transition: transform 0.8s cubic-bezier(0.4, 0, 0.2, 1);
+}
+.fancy-border > * > * > *:after {
+  right: 0;
+  transform: translate3d(0, -105%, 0);
+  transition: transform 0.8s cubic-bezier(0.4, 0, 0.2, 1);
+}
+/* fancy border */

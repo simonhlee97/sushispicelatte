@@ -37,14 +37,14 @@ p, h1, h2, h3, h4, h5, h6 {
 	--color-gray-20: #e0e0e0;
 	--color-gray-50: #C0C0C0;
 	--color-gray-90: #333;
-  --blue1: #68E8F4;
-  --blue2: #7799F6;
-  --green: #68F97A;
+  --blue1: #1C59FF;
+  --blue2: #581CFF;
+  --green: #005D66;
 	--background-color: #fff;
 	--text-color: var(--color-gray-90);
-	--text-color-link: #082840;
-	--text-color-link-active: #5f2b48;
-	--text-color-link-visited: #17050F;
+	--text-color-link: #083251;
+	--text-color-link-active: #204a9a;
+	--text-color-link-visited: #005D66;
 	--syntax-tab-size: 2;
 }
 @media (prefers-color-scheme: dark) {
@@ -83,7 +83,7 @@ html {
 	overflow-y: scroll;
 	overflow-x: hidden;
 
-  scrollbar-color: var(--blue1) var(--green);
+  scrollbar-color: var(--blue1) white;
   scroll-behavior: smooth;
   /* background-color: #282626; */
   background: linear-gradient(to bottom right, var(--color-gray-20), var(--color-gray-90));
@@ -124,17 +124,8 @@ li {
 }
 
 main {
-	padding: 1rem;
+	padding: 2rem 1.6rem 1.1rem 1.6rem;
   min-height: 100vh;
-}
-main :first-child {
-	margin-top: 0;
-}
-
-.links-nextprev {
-	list-style: none;
-	border-top: 1px dashed var(--color-gray-20);
-	padding: 1em 0;
 }
 
 table {
