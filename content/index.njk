@@ -7,7 +7,7 @@ numberOfLatestPostsToShow: 3
 ---
 {% set postsCount = collections.posts | length %}
 {% set latestPostsCount = postsCount | min(numberOfLatestPostsToShow) %}
-<h3 class='tc badge'>Latest {{ latestPostsCount }} Post{% if latestPostsCount != 1 %}s{% endif %}</h3>
+<h2 class='tc badge'>Latest {{ latestPostsCount }} Post{% if latestPostsCount != 1 %}s{% endif %}</h2>
 
 {% set postslist = collections.posts | head(-1 * numberOfLatestPostsToShow) %}
 {% set postslistCounter = postsCount %}

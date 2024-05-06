@@ -40,3 +40,9 @@ TODO:
 
 - [Ana](https://ohhelloana.blog/about/)
 - [httpster](https://httpster.io/about/)
+
+## Change log
+
+- 05-05-2024 UI designs, css fixes, navbar fix
+- 05-02-2024 Added a logo, links, css
+- 05-01-2024 Cloned the 11ty Blog Starter repo
