@@ -424,6 +424,12 @@ h1, h2, h3 {
   margin-bottom: 1.02em;
 }
 
+hr {
+  border: 0;
+  height: 1px;
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
+}
+
 /* UTILITY CLASSES */
 .tc {
   text-align: center;
@@ -584,11 +590,10 @@ p.footer-p {
 }
 
     .badge {
-  padding-top: 0.2em;
-  padding-bottom: 0.2em;
+  padding: 0.5em;
   border-radius: 9999px; 
-  max-width: 360px;
-  margin: 19px auto 25px auto;
+  max-width: 500px;
+  margin: 18px auto 22px auto;
   color: var(--blue1); 
   background-color: #EDE9FE;
 }
@@ -734,12 +739,8 @@ a.btn-tag:hover {
 		</main>
 
 		<footer class="footer">
-      <div class="divider line glow">
-        <span style="color: var(--blue1);">
-          <i class="fa-solid fa-grip-lines"></i>
-        </span>
-      </div>
-
+      
+      <hr>
       <div>
         <ul class="icons">
           <li><a href="https://github.com/simonhlee97"><i class="fa-2x fa-brands fa-square-github"></i></a></li>
