@@ -15,7 +15,7 @@ numberOfLatestPostsToShow: 3
 
 {% set morePosts = postsCount - numberOfLatestPostsToShow %}
 {% if morePosts > 0 %}
-<h5 class="tc">{{ morePosts }} more post{% if morePosts != 1 %}s{% endif %} can be found in <a href="/blog/">the archive</a>.</h5>
+<h5 class="tc">{{ morePosts }} more post{% if morePosts != 1 %}s{% endif %} can be found in <br><a href="/blog/"><i class="fa-solid fa-box-archive"></i> the archive</a></h5>
 {% endif %}
 
 {# List every content page in the project #}

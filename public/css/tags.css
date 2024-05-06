@@ -13,12 +13,27 @@
 .see-all-tags {
   padding: 2em;
 }
+.all-tags-list {
+  display: inline-flex;
+  justify-content: center;
+	flex-wrap: wrap;
+	gap: .44em;
+	list-style-type: none;
+	padding: 2.5em 0;
+  border: 1px dotted black;
+}
+.all-tags-item {
+  margin: 3px;
+}
 
 /* Tags list */
 .post-metadata {
 	display: inline-flex;
 	flex-wrap: wrap;
 	gap: .44em;
-	list-style: none;
+	list-style-type: none;
 	padding: 2.5em 0;
+}
+.tags {
+  align-items: center;
 }

@@ -3,17 +3,17 @@
   border-radius: 9999px; 
   max-width: 496px;
   margin: 18px auto 22px auto;
-  color: var(--blue1); 
+  color: var(--blue2); 
   background-color: #e0dbf9;
 }
-a.btn-tag {
+.btn-tag {
   border: 1px solid var(--blue1);
   border-radius: 0.25rem; 
   font-size: 9.1pt;
   text-decoration: none;
   padding: 4px 12px;
 }
-a.btn-tag:hover {
+.btn-tag:hover {
   text-decoration: underline;
   border: 1px solid var(--blue2);
 }

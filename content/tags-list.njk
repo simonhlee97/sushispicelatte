@@ -4,14 +4,14 @@ layout: layouts/home.njk
 ---
 <div class="pt-1">
 
-  <h2 class="badge tc">All Tags</h2>
+  <h2 class="badge tc"><i class="fa-solid fa-tags"></i> All Tags</h2>
 
-  <ul class='all-tags'>
+  <div class='all-tags-list'>
   {% for tag in collections.all | getAllTags | filterTagList %}
     {% set tagUrl %}/tags/{{ tag | slugify }}/{% endset %}
-    <li><a href="{{ tagUrl }}" class="post-tag">{{ tag }}</a></li>
+    <span class="all-tags-item"><a href="{{ tagUrl }}" class="btn-tag">{{ tag }}</a></span>
   {% endfor %}
-  </ul>
+  </div>
 
 </div>
 
