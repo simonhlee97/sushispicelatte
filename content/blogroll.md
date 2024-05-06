@@ -1,7 +1,7 @@
 ---
 layout: layouts/base.njk
 eleventyNavigation:
-  key: blogroll
+  key: roll
   order: 5
 ---
 ## My Favorite Blogs and Websites

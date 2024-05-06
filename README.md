@@ -22,7 +22,6 @@ A blog by Simon Lee
 tennis and photography are at my other blogs
 
 TODO:
-- change tag-links to outlined button-design
 - All Tags page - change list to outlined buttons
 
 
