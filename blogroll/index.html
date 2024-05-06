@@ -52,6 +52,7 @@ p, h1, h2, h3, h4, h5, h6 {
 	--color-gray-50: #C0C0C0;
 	--color-gray-90: #333;
   --gray: #F4F2EE;
+  --gray2: #F6F6F6;
   --blue1: #1C59FF;
   --blue2: #581CFF;
   --green: #005D66;
@@ -99,7 +100,7 @@ html {
   
 }
 body {
-  background: linear-gradient(to bottom right, var(--gray), var(--color-gray-50));
+  background: linear-gradient(to bottom left, var(--color-gray-50), var(--color-gray-20));
 	/* max-width: 50em; */
 	/* max-width: 700px; */
 	/* max-width: 796px; */
@@ -126,13 +127,13 @@ li {
 
 main {
   margin: 3em auto;
-	padding: 2.3rem 1.625rem 1.1rem 1.625rem;
-  min-height: 97vh;
+	padding: 2.3rem 1.11rem 1.11rem 1.11rem;
+  min-height: 95vh;
   max-width: 728px;
-  border-radius: 8px;
-  /* border: 2px solid transparent; */
-  /* border-image: linear-gradient(to right, var(--blue2), var(--blue1)); */
-  /* border-image-slice: 1; */
+  border-radius: 2px;
+  border: 1px solid transparent;
+  border-image: linear-gradient(to right, var(--color-gray-20), var(--gray));
+  border-image-slice: 1;
   background: white;
 }
 
@@ -201,27 +202,6 @@ a[href]:active {
 	color: var(--blue2);
 }
 
-/* DIVIDER */
-.divider {
-  display: flex;
-}
-.divider:before, .divider:after {
-  content: "";
-  flex: 1;
-}
-.line {
-  align-items: center;
-  margin: 1em -1em;
-}
-.line:before, .line:after {
-  height: 1px;
-  margin: 0 1em;
-}
-.glow:before, .glow:after {
-  height: 1px;
-  -webkit-filter: blur(1px);
-  border-radius: 3px;
-}
 .glow:before {
   background: linear-gradient(to right, var(--blue2), var(--blue1));
 }
@@ -256,10 +236,9 @@ hr {
 	padding: 0em;
 	display: flex;
   flex-direction: column;
-  /* flex-wrap: wrap; */
 	align-items: center;
-  border-radius: 8px;
-  background-color: white;
+  border-radius: 1px;
+  background-color: var(--gray2);
 }
 .nav {
   padding: 10px 0 10px 0;
@@ -268,9 +247,9 @@ hr {
 	list-style: none;
 }
 .nav-item {
-  border: 1px dotted var(--green);
+  /* border: 1px dotted var(--green); */
 	padding: 0 3px;
-	margin: 0 3px;
+	margin: 0 4px;
   text-transform: uppercase;
   font-size: 9pt;
 }
@@ -320,14 +299,29 @@ p.footer-p {
 .see-all-tags {
   padding: 2em;
 }
+.all-tags-list {
+  display: inline-flex;
+  justify-content: center;
+	flex-wrap: wrap;
+	gap: .44em;
+	list-style-type: none;
+	padding: 2.5em 0;
+  border: 1px dotted black;
+}
+.all-tags-item {
+  margin: 3px;
+}
 
 /* Tags list */
 .post-metadata {
 	display: inline-flex;
 	flex-wrap: wrap;
 	gap: .44em;
-	list-style: none;
+	list-style-type: none;
 	padding: 2.5em 0;
+}
+.tags {
+  align-items: center;
 }
 
     .excerpt {
@@ -403,17 +397,17 @@ p.footer-p {
   border-radius: 9999px; 
   max-width: 496px;
   margin: 18px auto 22px auto;
-  color: var(--blue1); 
+  color: var(--blue2); 
   background-color: #e0dbf9;
 }
-a.btn-tag {
+.btn-tag {
   border: 1px solid var(--blue1);
   border-radius: 0.25rem; 
   font-size: 9.1pt;
   text-decoration: none;
   padding: 4px 12px;
 }
-a.btn-tag:hover {
+.btn-tag:hover {
   text-decoration: underline;
   border: 1px solid var(--blue2);
 }
@@ -516,7 +510,7 @@ a.btn-tag:hover {
 		<a href="#skip" class="visually-hidden">Skip to main content</a>
 
 		<header>
-			<a href="/jinjjahoosier/"><img style="width:208px;" src="/jinjjahoosier/img/jinjja_log1.jpg" alt="jinjjalogo"></a>
+			<a href="/jinjjahoosier/"><img style="width:146px;" src="/jinjjahoosier/img/jinjja_sm.jpg" alt="jinjjalogo"></a>
 			<nav>
 				<h2 class="visually-hidden">Top level navigation menu</h2>
 				<ul class="nav">
@@ -540,7 +534,6 @@ a.btn-tag:hover {
 		</main>
 
 		<footer class="footer">
-      
       <hr>
       <div>
         <ul class="icons">
