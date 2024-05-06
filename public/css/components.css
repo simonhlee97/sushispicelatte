@@ -1,9 +1,8 @@
 .badge {
-  padding-top: 0.2em;
-  padding-bottom: 0.2em;
+  padding: 0.5em;
   border-radius: 9999px; 
-  max-width: 360px;
-  margin: 19px auto 25px auto;
+  max-width: 500px;
+  margin: 18px auto 22px auto;
   color: var(--blue1); 
   background-color: #EDE9FE;
 }
