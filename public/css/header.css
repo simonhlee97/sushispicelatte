@@ -10,7 +10,7 @@ header {
   background-color: var(--gray2);
 }
 .nav {
-  padding: 10px 0 10px 0;
+  padding: 7px 1px 7px 1px;
 	display: flex;
   justify-content: center;
 	list-style: none;

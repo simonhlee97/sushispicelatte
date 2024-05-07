@@ -1,0 +1,41 @@
+---
+layout: layouts/base.njk
+eleventyNavigation:
+  key: search
+  order: 6
+---
+
+{% block sidebar %}
+  <h1>Search 🔎</h1>
+  <p>
+    Search this site
+  </p>
+{% endblock %}
+
+
+{% block content %}
+
+  <h2>Search this site</h2>
+  <p>
+    This site is indexed by Google. So it can be searched.
+  </p>
+
+  <form action="https://www.google.com/search?q=" method="get" class="search">
+    <input type="hidden" name="q" id="q" value="site:/">
+    <p><label for="search-str">Search <small>(results displayed on Google's site)</small></label>
+    <input type="text" name="q" id="search-str"></p>
+    <p><button type="submit" class="submit">Search with Google</button></p>
+  </form>
+
+  <h2>Tagged posts</h2>
+  <p>
+    If you are struggling to find what you are looking for, you might also find it by exploring the tags.
+  </p>
+
+  <div class='all-tags-list'>
+    {% for tag in collections.all | getAllTags | filterTagList %}
+      {% set tagUrl %}/tags/{{ tag | slugify }}/{% endset %}
+      <span class="all-tags-item"><a href="{{ tagUrl }}" class="btn-tag">{{ tag }}</a></span>
+    {% endfor %}
+  </div>
+{% endblock %}

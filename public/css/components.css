@@ -4,7 +4,7 @@
   max-width: 496px;
   margin: 18px auto 22px auto;
   color: var(--blue2); 
-  background-color: #e0dbf9;
+  background-color: var(--light-bg);
 }
 .btn-tag {
   border: 1px solid var(--blue1);

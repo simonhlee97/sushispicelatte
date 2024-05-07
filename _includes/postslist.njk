@@ -5,7 +5,7 @@
         <span>
           <h4><a href="{{ post.url }}" class="postlist-link">{% if post.data.title %}{{ post.data.title }}{% else %}<code>{{ post.url }}</code>{% endif %}</a></h4>
           <div class="excerpt">{{post.data.excerpt}}</div>
-          <div class="postlist-date"><time class="postlist-date" datetime="{{ post.date | htmlDateString }}">{{ post.date.toDateString() }}</time></div>
+          <div class="postlist-date"><i class="fa-regular fa-calendar"></i> <time class="postlist-date" datetime="{{ post.date | htmlDateString }}">{{ post.date.toDateString() }}</time></div>
         </span>
       </span>
     </div>
