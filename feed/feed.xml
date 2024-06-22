@@ -1,21 +1,44 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom" xml:base="en">
-	<title>Jinjja Hoosier</title>
-	<subtitle>Jinjja, in Korean, means real. Hoosier is just a person from Indiana.</subtitle>
-	<link href="https://simonhlee97.github.io/jinjjahoosier/feed/feed.xml" rel="self"/>
-	<link href="https://simonhlee97.github.io/jinjjahoosier/blog"/>
-	<updated>2024-05-06T15:21:25Z</updated>
-	<id>https://simonhlee97.github.io/blog</id>
+	<title>Sushi Spice Latte</title>
+	<subtitle>Truth is like poetry. And most people fu**ing hate poetry. (From the movie &#39;The Big Short&#39;)</subtitle>
+	<link href="https://simonhlee97.github.io/sushispicelatte/feed/feed.xml" rel="self"/>
+	<link href="https://simonhlee97.github.io/sushispicelatte/sushispicelatte"/>
+	<updated>2024-06-22T09:16:31Z</updated>
+	<id>https://simonhlee97.github.io/sushispicelatte</id>
 	<author>
 		<name>Simon</name>
 		<email>psyminrhee79@icloud.com</email>
 	</author>
 	
 	<entry>
+		<title>Restarting the Golf Career</title>
+		<link href="https://simonhlee97.github.io/sushispicelatte/blog/golfing-restart/"/>
+		<updated>2024-06-22T09:16:31Z</updated>
+		<id>https://simonhlee97.github.io/sushispicelatte/blog/golfing-restart/</id>
+		<content type="html">&lt;h3 id=&quot;my-golf-bag&quot; tabindex=&quot;-1&quot;&gt;My Golf Bag &lt;a class=&quot;header-anchor&quot; href=&quot;https://simonhlee97.github.io/sushispicelatte/blog/golfing-restart/&quot;&gt;#&lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;My golf bag, and all the stuff inside it, has not changed in 15+ years. Here&#39;s what&#39;s currently in my bag.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Ben Hogan Apex Plus irons&lt;/li&gt;
+&lt;li&gt;TaylorMade R580 Driver&lt;/li&gt;
+&lt;li&gt;an ancient Ping putter&lt;/li&gt;
+&lt;li&gt;Nike bag&lt;/li&gt;
+&lt;li&gt;shoes? Somewhere in my mom&#39;s garage?&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&quot;direct-to-consumer&quot; tabindex=&quot;-1&quot;&gt;Direct to Consumer? &lt;a class=&quot;header-anchor&quot; href=&quot;https://simonhlee97.github.io/sushispicelatte/blog/golfing-restart/&quot;&gt;#&lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;The &amp;quot;direct to consumer&amp;quot; market seems to be getting quite popular, as people are looking for wallet-friendly and good quality golf clubs.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Takomo&lt;/li&gt;
+&lt;li&gt;Sub70&lt;/li&gt;
+&lt;/ul&gt;
+</content>
+	</entry>
+	
+	<entry>
 		<title>Welcome to Jinjja Hoosier</title>
-		<link href="https://simonhlee97.github.io/jinjjahoosier/blog/firstpost/"/>
-		<updated>2024-05-06T15:21:25Z</updated>
-		<id>https://simonhlee97.github.io/jinjjahoosier/blog/firstpost/</id>
+		<link href="https://simonhlee97.github.io/sushispicelatte/blog/firstpost/"/>
+		<updated>2024-06-22T09:16:31Z</updated>
+		<id>https://simonhlee97.github.io/sushispicelatte/blog/firstpost/</id>
 		<content type="html">&lt;p&gt;Welcome to Jinjja Hoosier, &amp;quot;a blog about nothing&amp;quot;. More accurately, a blog not focused on one topic. I&#39;m leaving this blog wide open. We&#39;ll see what happens.&lt;/p&gt;
 </content>
 	</entry>

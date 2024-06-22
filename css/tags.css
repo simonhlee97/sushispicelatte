@@ -17,13 +17,11 @@
   display: inline-flex;
   justify-content: center;
 	flex-wrap: wrap;
-	gap: .44em;
 	list-style-type: none;
 	padding: 2.5em 0;
-  border: 1px dotted black;
 }
 .all-tags-item {
-  margin: 3px;
+  margin: 6px 4px;
 }
 
 /* Tags list */

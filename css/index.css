@@ -37,6 +37,7 @@ p, h1, h2, h3, h4, h5, h6 {
 	--color-gray-20: #e0e0e0;
 	--color-gray-50: #C0C0C0;
 	--color-gray-90: #333;
+  --light-bg: #e0dbf9;
   --gray: #F4F2EE;
   --gray2: #F6F6F6;
   --blue1: #1C59FF;
@@ -86,7 +87,9 @@ html {
   
 }
 body {
-  background: linear-gradient(to bottom left, var(--color-gray-50), var(--color-gray-20));
+  /* background: linear-gradient(to bottom left, var(--color-gray-50), var(--color-gray-20)); */
+  background-color: white;
+
 	/* max-width: 50em; */
 	/* max-width: 700px; */
 	/* max-width: 796px; */
@@ -113,16 +116,17 @@ li {
 
 main {
   margin: 3em auto;
-	padding: 2.3rem 1.11rem 1.11rem 1.11rem;
-  min-height: 95vh;
+	padding: 2.3rem 1.6rem 1.13rem 1.6rem;
+  border-radius: 10px;
+  min-height: 93vh;
   max-width: 728px;
-  border-radius: 2px;
-  border: 1px solid transparent;
-  border-image: linear-gradient(to right, var(--color-gray-20), var(--gray));
-  border-image-slice: 1;
-  background: white;
+  /* background: linear-gradient(to bottom, white, var(--gray2)); */
+  background-color: white;
 }
-
+main ul {
+  margin-bottom: 1.4em;
+  padding-left: 30px;
+}
 table {
 	margin: 1em 0;
 }
@@ -187,18 +191,15 @@ a[href]:hover,
 a[href]:active {
 	color: var(--blue2);
 }
-
-.glow:before {
-  background: linear-gradient(to right, var(--blue2), var(--blue1));
+#archive-link {
+  text-decoration: none;
 }
-.glow:after {
-  background: linear-gradient(to left, var(--blue1), var(--blue2));
+#archive-link:hover {
+  text-decoration: underline;
 }
-
 h1, h2, h3 {
   margin-bottom: 1.02em;
 }
-
 hr {
   border: 0;
   height: 1px;

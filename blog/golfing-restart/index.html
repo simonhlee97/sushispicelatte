@@ -3,7 +3,7 @@
 	<head>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<title>Tagged &quot;posts with two tags&quot;</title>
+		<title>Restarting the Golf Career</title>
 		<meta name="description" content="Truth is like poetry. And most people fu**ing hate poetry. (From the movie &#39;The Big Short&#39;)">
 		<link rel="alternate" href="/sushispicelatte/feed/feed.xml" type="application/atom+xml" title="Sushi Spice Latte">
 		<link rel="alternate" href="/sushispicelatte/feed/feed.json" type="application/json" title="Sushi Spice Latte">
@@ -12,7 +12,198 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap" rel="stylesheet">
-		<style>/* CSS reset from Josh Comeau */
+		<style>/**
+ * okaidia theme for JavaScript, CSS and HTML
+ * Loosely based on Monokai textmate theme by http://www.monokai.nl/
+ * @author ocodia
+ */
+
+code[class*="language-"],
+pre[class*="language-"] {
+	color: #f8f8f2;
+	background: none;
+	text-shadow: 0 1px rgba(0, 0, 0, 0.3);
+	font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
+	font-size: 1em;
+	text-align: left;
+	white-space: pre;
+	word-spacing: normal;
+	word-break: normal;
+	word-wrap: normal;
+	line-height: 1.5;
+
+	-moz-tab-size: 4;
+	-o-tab-size: 4;
+	tab-size: 4;
+
+	-webkit-hyphens: none;
+	-moz-hyphens: none;
+	-ms-hyphens: none;
+	hyphens: none;
+}
+
+/* Code blocks */
+pre[class*="language-"] {
+	padding: 1em;
+	margin: .5em 0;
+	overflow: auto;
+	border-radius: 0.3em;
+}
+
+:not(pre) > code[class*="language-"],
+pre[class*="language-"] {
+	background: #272822;
+}
+
+/* Inline code */
+:not(pre) > code[class*="language-"] {
+	padding: .1em;
+	border-radius: .3em;
+	white-space: normal;
+}
+
+.token.comment,
+.token.prolog,
+.token.doctype,
+.token.cdata {
+	color: #8292a2;
+}
+
+.token.punctuation {
+	color: #f8f8f2;
+}
+
+.token.namespace {
+	opacity: .7;
+}
+
+.token.property,
+.token.tag,
+.token.constant,
+.token.symbol,
+.token.deleted {
+	color: #f92672;
+}
+
+.token.boolean,
+.token.number {
+	color: #ae81ff;
+}
+
+.token.selector,
+.token.attr-name,
+.token.string,
+.token.char,
+.token.builtin,
+.token.inserted {
+	color: #a6e22e;
+}
+
+.token.operator,
+.token.entity,
+.token.url,
+.language-css .token.string,
+.style .token.string,
+.token.variable {
+	color: #f8f8f2;
+}
+
+.token.atrule,
+.token.attr-value,
+.token.function,
+.token.class-name {
+	color: #e6db74;
+}
+
+.token.keyword {
+	color: #66d9ef;
+}
+
+.token.regex,
+.token.important {
+	color: #fd971f;
+}
+
+.token.important,
+.token.bold {
+	font-weight: bold;
+}
+.token.italic {
+	font-style: italic;
+}
+
+.token.entity {
+	cursor: help;
+}
+
+/*
+ * New diff- syntax
+ */
+
+pre[class*="language-diff-"] {
+	--eleventy-code-padding: 1.25em;
+	padding-left: var(--eleventy-code-padding);
+	padding-right: var(--eleventy-code-padding);
+}
+.token.deleted {
+	background-color: hsl(0, 51%, 37%);
+	color: inherit;
+}
+.token.inserted {
+	background-color: hsl(126, 31%, 39%);
+	color: inherit;
+}
+
+/* Make the + and - characters unselectable for copy/paste */
+.token.prefix.unchanged,
+.token.prefix.inserted,
+.token.prefix.deleted {
+	-webkit-user-select: none;
+	user-select: none;
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	padding-top: 2px;
+	padding-bottom: 2px;
+}
+.token.prefix.inserted,
+.token.prefix.deleted {
+	width: var(--eleventy-code-padding);
+	background-color: rgba(0,0,0,.2);
+}
+
+/* Optional: full-width background color */
+.token.inserted:not(.prefix),
+.token.deleted:not(.prefix) {
+	display: block;
+	margin-left: calc(-1 * var(--eleventy-code-padding));
+	margin-right: calc(-1 * var(--eleventy-code-padding));
+	text-decoration: none; /* override del, ins, mark defaults */
+	color: inherit; /* override del, ins, mark defaults */
+}
+
+.post-title {
+  font-family: var(--header-font);
+  font-weight: 900;
+  text-align: center;
+  padding: 12px 4px;
+  font-size: min(max(32px, calc(2rem + ((1vw - 3.6px) * 3.6364))), 48px);
+  /* Safari resize fix */
+  min-height: 0vw;
+  margin-bottom: 0;
+}
+.date {
+  padding-bottom: 1.4em;
+}
+.date time {
+  font-size: 9.5pt;
+}
+.links-nextprev {
+	list-style: none;
+	border-top: 1px dashed var(--color-gray-20);
+	padding: 2.3em 0 1.7em 0;
+}
+/* CSS reset from Josh Comeau */
 *, *::before, *::after {
   box-sizing: border-box;
 }
@@ -528,25 +719,38 @@ p.footer-p {
 		</header>
 
 		<main id="skip">
-			<div class="pt-1">
-  <h2 class="badge tc"><i class="fa-solid fa-tags"></i> Tagged "posts with two tags"</h2>
+			
 
-  
-  <div class="postlist">
-  
+<h1 class="post-title">Restarting the Golf Career</h1>
+
+<div class="date tc">
+  <time datetime="2024-06-22">22 June 2024</time>
 </div>
 
+<h3 id="my-golf-bag" tabindex="-1">My Golf Bag <a class="header-anchor" href="#my-golf-bag">#</a></h3>
+<p>My golf bag, and all the stuff inside it, has not changed in 15+ years. Here's what's currently in my bag.</p>
+<ul>
+<li>Ben Hogan Apex Plus irons</li>
+<li>TaylorMade R580 Driver</li>
+<li>an ancient Ping putter</li>
+<li>Nike bag</li>
+<li>shoes? Somewhere in my mom's garage?</li>
+</ul>
+<h3 id="direct-to-consumer" tabindex="-1">Direct to Consumer? <a class="header-anchor" href="#direct-to-consumer">#</a></h3>
+<p>The &quot;direct to consumer&quot; market seems to be getting quite popular, as people are looking for wallet-friendly and good quality golf clubs.</p>
+<ul>
+<li>Takomo</li>
+<li>Sub70</li>
+</ul>
 
 
-
-
-
-
-  <div class="see-all-tags">
-    <h4 class="tc"><i class="fa-solid fa-tags"></i> see <a href="/sushispicelatte/tags/">all tags</a></h4>
-  </div>
+<div class="tags post-metadata">
+  <i class="fa-solid fa-tags"></i>
+	  <a href="/sushispicelatte/tags/sports/" class="btn-tag">sports</a>
+	  <a href="/sushispicelatte/tags/golf/" class="btn-tag">golf</a>
 </div>
-
+<ul class="links-nextprev"><li>Previous: <a href="/sushispicelatte/blog/firstpost/">Welcome to Jinjja Hoosier</a></li>
+</ul>
 
 		</main>
 
