@@ -87,7 +87,9 @@ html {
   
 }
 body {
-  background: linear-gradient(to bottom left, var(--color-gray-50), var(--color-gray-20));
+  /* background: linear-gradient(to bottom left, var(--color-gray-50), var(--color-gray-20)); */
+  background-color: white;
+
 	/* max-width: 50em; */
 	/* max-width: 700px; */
 	/* max-width: 796px; */
@@ -114,14 +116,16 @@ li {
 
 main {
   margin: 3em auto;
-	padding: 2.3rem 1.11rem 1.11rem 1.11rem;
-  min-height: 95vh;
+	padding: 2.3rem 1.6rem 1.13rem 1.6rem;
+  border-radius: 10px;
+  min-height: 93vh;
   max-width: 728px;
-  border-radius: 2px;
-  border: 1px solid transparent;
-  border-image: linear-gradient(to right, var(--color-gray-20), var(--gray));
-  border-image-slice: 1;
-  background: white;
+  /* background: linear-gradient(to bottom, white, var(--gray2)); */
+  background-color: white;
+}
+main ul {
+  margin-bottom: 1.4em;
+  padding-left: 30px;
 }
 table {
 	margin: 1em 0;

@@ -18,7 +18,7 @@ module.exports = function(eleventyConfig) {
 		"./node_modules/prismjs/themes/prism-okaidia.css": "/css/prism-okaidia.css"
 	});
 
-  eleventyConfig.addPassthroughCopy("bundle.js");
+  // eleventyConfig.addPassthroughCopy("bundle.js");
 
 	// Run Eleventy when these files change:
 	// https://www.11ty.dev/docs/watch-serve/#add-your-own-watch-targets

@@ -1,11 +1,11 @@
 module.exports = {
-	title: "Jinjja Hoosier",
-	url: "https://simonhlee97.github.io/blog",
+	title: "Sushi Spice Latte",
+	url: "https://simonhlee97.github.io/sushispicelatte",
 	language: "en",
-	description: "Jinjja, in Korean, means real. Hoosier is just a person from Indiana.",
+	description: "Truth is like poetry. And most people fu**ing hate poetry. (From the movie 'The Big Short')",
 	author: {
 		name: "Simon",
 		email: "psyminrhee79@icloud.com",
-		url: "https://example.com/"
+		url: "https://simonhlee97.github.io/"
 	}
 }
