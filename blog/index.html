@@ -9,6 +9,10 @@
 		<link rel="alternate" href="/sushispicelatte/feed/feed.json" type="application/json" title="Sushi Spice Latte">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer">
 		<meta name="generator" content="Eleventy v2.0.1">
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.15.1/cdn/themes/light.css">
+    <script type="module" src="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.15.1/cdn/shoelace.js"></script>
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap" rel="stylesheet">
@@ -243,7 +247,7 @@ hr {
   background-color: white;
 }
 .nav {
-  padding: 7px 1px 7px 1px;
+  padding: 12px 1px 7px 1px;
 	display: flex;
   justify-content: center;
 	list-style: none;
@@ -285,6 +289,13 @@ hr {
 }
 p.footer-p {
   margin-bottom: 5px;
+}
+
+#footer-logo {
+  display: block;
+  margin: 0 auto;
+  max-width: 350px;
+  padding: 3em 2em;
 }
     /* Tags */
 .post-tag {
@@ -511,10 +522,8 @@ p.footer-p {
 		<a href="#skip" class="visually-hidden">Skip to main content</a>
 
 		<header>
-			
-			<a href="/sushispicelatte/">Sushi Spice Latte</a>
+			<a href="/sushispicelatte/"><img style="width:169px;" src="/sushispicelatte/img/logo_sushi.jpg" alt="sushi_logo"></a>
 
-      
 			<nav>
 				<h2 class="visually-hidden">Top level navigation menu</h2>
 				<ul class="nav">
@@ -538,7 +547,7 @@ p.footer-p {
         <span>
           <h4><a href="/sushispicelatte/blog/golfing-restart/" class="postlist-link">Restarting the Golf Career</a></h4>
           <div class="excerpt">After a 6 year hiatus, I am once again un-retiring from golf and chasing the bogey golf dream.</div>
-          <div class="postlist-date"><i class="fa-regular fa-calendar"></i> <time class="postlist-date" datetime="2024-06-22">Sat Jun 22 2024</time></div>
+          <div class="postlist-date"><i class="fa-regular fa-calendar"></i> <time class="postlist-date" datetime="2024-06-27">Thu Jun 27 2024</time></div>
         </span>
       </span>
     </div>
@@ -546,9 +555,9 @@ p.footer-p {
     <div class="postlist-item">
       <span>
         <span>
-          <h4><a href="/sushispicelatte/blog/firstpost/" class="postlist-link">Welcome to Jinjja Hoosier</a></h4>
-          <div class="excerpt">Welcome to the Jinjja Hoosier blog! A blog about nothing.</div>
-          <div class="postlist-date"><i class="fa-regular fa-calendar"></i> <time class="postlist-date" datetime="2024-06-22">Sat Jun 22 2024</time></div>
+          <h4><a href="/sushispicelatte/blog/firstpost/" class="postlist-link">Welcome to Sushi Spice Latte</a></h4>
+          <div class="excerpt">Welcome to the Sushi Spice Latte blog! A blog about nothing.</div>
+          <div class="postlist-date"><i class="fa-regular fa-calendar"></i> <time class="postlist-date" datetime="2024-06-27">Thu Jun 27 2024</time></div>
         </span>
       </span>
     </div>
@@ -567,6 +576,7 @@ p.footer-p {
 		<footer class="footer">
       <hr>
       <div>
+        <div id="footer-logo"><img style="width: 100%;" src="/sushispicelatte/img/logo_sushi.jpg" alt="sushi_logo"></div>
         <ul class="icons">
           <li><a href="https://github.com/simonhlee97"><i class="fa-2x fa-brands fa-square-github"></i></a></li>
           <li><a href="https://open.spotify.com/user/r0nqj37i54ondk4yntbug4beh"><i class="fa-2x fa-brands fa-spotify"></i></a></li>
