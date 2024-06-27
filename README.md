@@ -1,11 +1,11 @@
-# Jinjja Hoosier
+# Sushi Spice Latte
 
 A blog by Simon Lee, built with 11ty, hosted on GitHub Pages.
 
 ### table of contents:
 
-- todos, ideas for this website
 - my blog's taxonomy
+- todos, ideas for this website
 - changelog
 - learn more
 
@@ -52,3 +52,6 @@ A blog by Simon Lee, built with 11ty, hosted on GitHub Pages.
 - 05-01-2024 Cloned the 11ty Blog Starter repo
 
 ### Learn more
+
+- [11ty](https://11ty.dev)
+- [Github Pages](https://pages.github.com)

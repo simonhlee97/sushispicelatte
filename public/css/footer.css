@@ -16,3 +16,10 @@
 p.footer-p {
   margin-bottom: 5px;
 }
+
+#footer-logo {
+  display: block;
+  margin: 0 auto;
+  max-width: 350px;
+  padding: 3em 2em;
+}

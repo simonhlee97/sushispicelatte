@@ -11,7 +11,7 @@ header {
   background-color: white;
 }
 .nav {
-  padding: 7px 1px 7px 1px;
+  padding: 12px 1px 7px 1px;
 	display: flex;
   justify-content: center;
 	list-style: none;
